@@ -1,0 +1,9 @@
+@media (min-width: 768px) {
+  body {
+    background-color: red;
+  }
+}
+.footer > .footer-heading {
+  font-size: 40px;
+  color: #333;
+}/*# sourceMappingURL=main.css.map */

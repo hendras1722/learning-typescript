@@ -1,20 +1,23 @@
-//string
-let nama: string;
-nama = "Barito";
+interface ObjInterface {
+  name: string;
+  age: number;
+}
 
-// number
-let age: number = 0;
-age = 12;
+type CheckStris = Record<keyof ObjInterface, string | number>;
 
-// Boolean
-let isMarried: boolean;
-isMarried = true;
+let obj: CheckStris = {
+  name: "hello world",
+  age: 12,
+};
+let i: keyof ObjInterface;
+let newObj: CheckStris = {
+  name: "",
+  age: 0,
+};
+console.log(newObj);
 
-// any
-let heroes: any = "wewe";
-heroes = "12";
+for (i in obj) {
+  newObj[i] = obj[i];
+}
 
-// union
-let phone: number | string;
-phone = "08121333232";
-phone = 1249214124;
+console.log(newObj);

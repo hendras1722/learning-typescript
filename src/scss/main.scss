@@ -1,0 +1,89 @@
+// $alert: (
+//   "danger": pink,
+//   success: green,
+// );
+// .main {
+//   .container & {
+//     background-color: map-get($map: $alert, $key: danger);
+//   }
+
+//   &:hover {
+//     background-color: yellow;
+//   }
+//   //   background-color: red;
+// }
+
+// mixin
+
+// @mixin element($element) {
+//   &__#{$element} {
+//     @content;
+//     // color: blue;
+//   }
+// }
+
+// @font-face {
+//   font-size: 12px;
+// }
+
+// .main {
+//   @include element("content") {
+//     color: blue;
+//     text-decoration: none;
+//   }
+// }
+
+$breakpoints: (
+  sm: (
+    min: 576px,
+    max: 575.98px,
+  ),
+  md: (
+    min: 768px,
+    max: 767.98px,
+  ),
+  lg: (
+    min: 992px,
+    max: 991.98px,
+  ),
+  xl: (
+    min: 1200px,
+    max: 1199.98px,
+  ),
+  xxl: (
+    min: 1400px,
+    max: 1399.98px,
+  ),
+);
+
+@media (min-width: 768px) {
+  body {
+    background-color: red;
+  }
+}
+
+// .footer {
+//   &-heading {
+//     font-size: 30px;
+//   }
+// }
+
+.footer > .footer-heading {
+  font-size: 40px;
+  color: #333;
+}
+
+// body {
+//   font-family: "Inter", sans-serif;
+//   background-position: center top;
+//   background-attachment: scroll;
+//   //   background-image: url("~/assets/images/body_bg_color_mobile.svg");
+//   background-size: 100vw auto;
+
+//   @include breakpoint("md") {
+//     // background-image: url("~/assets/images/body_bg_color.svg");
+//     background-size: 1442px auto;
+//     background-attachment: fixed;
+//     background-color: red;
+//   }
+// }
